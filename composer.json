@@ -12,5 +12,10 @@
             "name": "You",
             "email": "user@example.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Demo\\": "src"
+        }
+    }
 }

@@ -19,13 +19,15 @@ $container['view'] = function ($container) {
     return $view;
 };
 
+$container['controller.home'] = function($container) {
+    return new \Demo\Controller\HomeController($container['view']);
+};
+
+$container['controller.weather'] = function($container) {
+    return new \Demo\Controller\WeatherController($container['view']);
+};
+
 $app = new \Slim\App($container);
-$app->get('/', function (Request $request, Response $response) {
-    return $this->view->render($response, 'index.html', [
-        "name" => "Michael"
-    ]);
-});
-$app->get('/weather', function (Request $request, Response $response) {
-    return $this->view->render($response, 'weather.html');
-});
+$app->get('/', "controller.home:hello");
+$app->get('/weather', "controller.weather:index");
 $app->run();
