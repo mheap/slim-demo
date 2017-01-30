@@ -1,0 +1,15 @@
+{
+    "name": "you/slim-demo",
+    "description": "A demo slim project",
+    "type": "project",
+    "require": {
+        "slim/slim": "^3.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "You",
+            "email": "user@example.com"
+        }
+    ]
+}
