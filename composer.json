@@ -4,7 +4,10 @@
     "type": "project",
     "require": {
         "slim/slim": "^3.7",
-        "slim/twig-view": "^2.2"
+        "slim/twig-view": "^2.2",
+        "flexsounds/slim-symfony-di-container": "^1.0",
+        "symfony/config": "^3.2",
+        "symfony/yaml": "^3.2"
     },
     "license": "MIT",
     "authors": [
