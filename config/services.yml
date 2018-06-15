@@ -1,11 +1,11 @@
 parameters:
-  slim.config.httpVersion: '1.1'
-  slim.config.outputBuffering: append
-  slim.config.determineRouteBeforeAppMiddleware: 0
-  slim.config.displayErrorDetails: 0
-  slim.config.response.defaultContentType: text/html; charset=UTF-8
-  slim.config.response.defaultStatus: 200
-  slim.config.response.chunkSize: 4096
+  httpVersion: '1.1'
+  outputBuffering: append
+  determineRouteBeforeAppMiddleware: 0
+  displayErrorDetails: 0
+  response.defaultContentType: text/html; charset=UTF-8
+  response.defaultStatus: 200
+  response.chunkSize: 4096
 
 #  You may want to add/amend these response headers for your application
   slim.config.response.defaultheaders:
